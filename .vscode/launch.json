@@ -1,0 +1,192 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug: examples/usage.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/usage.ts",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Debug: examples/simple.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/simple.ts",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Debug: examples/quickstart.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/quickstart.ts",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Debug: examples/advanced.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/advanced.ts",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Debug: examples/typescript.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/typescript.ts",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Debug: examples/coindesk.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/coindesk.ts",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Debug: examples/coindesk-sdk.ts",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/examples/coindesk-sdk.ts",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    },
+    {
+      "name": "Debug: Current File",
+      "type": "node",
+      "request": "launch",
+      "program": "${file}",
+      "runtimeExecutable": "tsx",
+      "runtimeArgs": ["--inspect-brk"],
+      "args": [],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": ["<node_internals>/**"],
+      "sourceMaps": true,
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ]
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Debug All Examples",
+      "configurations": [
+        "Debug: examples/usage.ts",
+        "Debug: examples/simple.ts",
+        "Debug: examples/quickstart.ts",
+        "Debug: examples/coindesk-sdk.ts"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+"use strict";
+n;
+nimport;
+{
+    CoinGeckoProvider;
+}
+from;
+'../src/providers/coingecko.js';
+nimport;
+{
+    VolatilityCalculator;
+}
+from;
+'../src/calculators/volatility.js';
+nimport;
+{
+    DVOLCalculator;
+}
+from;
+'../src/calculators/dvol.js';
+n;
+nasync;
+function quickStart() { n; } // Étape 1: Initialiser le fournisseur de données\n  const provider = new CoinGeckoProvider();\n\n  // Étape 2: Récupérer les données de prix\n  const priceData = await provider.fetchPriceData('bitcoin', '30d');\n\n  if (!priceData.success || !priceData.data) {\n    throw new Error(priceData.error);\n  }\n\n  // Étape 3: Calculer la volatilité\n  const volatility = VolatilityCalculator.calculateMetrics(priceData.data, '30d');\n\n  // Étape 4: Calculer le DVOL\n  const dvol = DVOLCalculator.calculateDVOL(priceData.data, 'ewma');\n\n  // Étape 5: Afficher les résultats\n  console.log('\\n🎯 RÉSULTATS - BITCOIN (30 jours)\\n');\n  console.log(`Volatilité: ${volatility.volatility.toFixed(2)}%`);\n  console.log(`Volatilité Annualisée: ${volatility.annualizedVolatility.toFixed(2)}%`);\n  console.log(`DVOL (Realized Volatility): ${dvol.dvol.toFixed(2)}%`);\n  console.log(`Index DVOL: ${dvol.dvolIndex.toFixed(1)}/100`);\n  console.log(`Confiance: ${dvol.confidence.toFixed(1)}%\\n`);\n}\n\nquickStart().catch(error => {\n  console.error('Erreur:', error);\n});\n
+//# sourceMappingURL=quickstart.js.map
